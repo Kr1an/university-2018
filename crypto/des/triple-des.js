@@ -1,7 +1,7 @@
 #!/bin/node
 const crypto = require('crypto');
 const fs = require('fs');
-const nthDes = require('../lib/nth-des');
+const nthDes = require('./lib/nth-des');
 
 
 
