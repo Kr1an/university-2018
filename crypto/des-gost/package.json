@@ -1,0 +1,17 @@
+{
+  "name": "des-gost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "dialog": "^0.3.1",
+    "node-gost": "^1.0.2",
+    "nw-dialog": "^1.0.7"
+  }
+}
