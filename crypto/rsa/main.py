@@ -98,8 +98,12 @@ class PrivateKey(namedtuple('PrivateKey', 'n d')):
 
 if __name__ == '__main__':
        pub, priv = make_key_pair(20)
-       msg = 'message'
+       print(pub.e)
+       print(priv.d)
+       msg = open('input.txt', 'r').read()
        e = pub.encrypt_str(msg)
        print(e)
+       open('encrypted.txt', 'w').write(e)
        d = priv.decrypt_str(e)
+       open('decrypted.txt', 'w').write(d)
        print(d)

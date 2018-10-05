@@ -77,12 +77,15 @@ namespace ISM.GOST28147
             var subkeys = GenerateKeys(key);
             var result = new byte[data.Length];
             var block = new byte[8];
+	    Console.WriteLine("data block: " + System.Text.Encoding.UTF8.GetString(data));
 
             for (int i = 0; i < data.Length / 8; i++)                    // N blocks 64bits length.
             {
                 Array.Copy(data, 8 * i, block, 0, 8);
+		Console.WriteLine("64 bit block: " + System.Text.Encoding.UTF8.GetString(block));	
                 Array.Copy(AlgorithmBlock(isEncoding, block, subkeys), 0, result, 8 * i, 8);
             }
+	    Console.WriteLine("encrypted data: " + System.Text.Encoding.UTF8.GetString(result));
 
             return result;
         }
@@ -96,9 +99,10 @@ namespace ISM.GOST28147
 
             for (int i = 0; i < 32; i++)
             {
-                var keyIndex = i < codingValue ? (i % 8) : (7 - i % 8);  // to 24th cycle : 0 to 7; after - 7 to 0;
-                var s = (N1 + keys[keyIndex]) % uint.MaxValue;           // (N1 + X[i]) mod 2^32
-                s = Substitution(s);                                     // substitute from box
+                var keyIndex = i < codingValue ? (i % 8) : (7 - i % 8);  //+ to 24th cycle : 0 to 7; after - 7 to 0;
+                var s = (N1 + keys[keyIndex]) % uint.MaxValue;           //+ (N1 + X[i]) mod 2^32 
+                s = Substitution(s);                                     //+ substitute from box
+		
                 s = (s << 11) | (s >> 21);
                 s ^= N2;                                                 // ( s + N2 ) mod 2
 
