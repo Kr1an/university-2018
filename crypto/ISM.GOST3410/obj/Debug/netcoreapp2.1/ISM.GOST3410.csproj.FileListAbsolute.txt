@@ -1,0 +1,11 @@
+/home/anton/Workspace/university/crypto/ISM.GOST3410/bin/Debug/netcoreapp2.1/ISM.GOST3410.deps.json
+/home/anton/Workspace/university/crypto/ISM.GOST3410/bin/Debug/netcoreapp2.1/ISM.GOST3410.runtimeconfig.json
+/home/anton/Workspace/university/crypto/ISM.GOST3410/bin/Debug/netcoreapp2.1/ISM.GOST3410.runtimeconfig.dev.json
+/home/anton/Workspace/university/crypto/ISM.GOST3410/bin/Debug/netcoreapp2.1/ISM.GOST3410.dll
+/home/anton/Workspace/university/crypto/ISM.GOST3410/bin/Debug/netcoreapp2.1/ISM.GOST3410.pdb
+/home/anton/Workspace/university/crypto/ISM.GOST3410/obj/Debug/netcoreapp2.1/ISM.GOST3410.csprojAssemblyReference.cache
+/home/anton/Workspace/university/crypto/ISM.GOST3410/obj/Debug/netcoreapp2.1/ISM.GOST3410.csproj.CoreCompileInputs.cache
+/home/anton/Workspace/university/crypto/ISM.GOST3410/obj/Debug/netcoreapp2.1/ISM.GOST3410.AssemblyInfoInputs.cache
+/home/anton/Workspace/university/crypto/ISM.GOST3410/obj/Debug/netcoreapp2.1/ISM.GOST3410.AssemblyInfo.cs
+/home/anton/Workspace/university/crypto/ISM.GOST3410/obj/Debug/netcoreapp2.1/ISM.GOST3410.dll
+/home/anton/Workspace/university/crypto/ISM.GOST3410/obj/Debug/netcoreapp2.1/ISM.GOST3410.pdb
